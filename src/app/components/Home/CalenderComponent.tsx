@@ -5,7 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 const CalenderComponent = () => {
   const today = new Date();
   return (
-    <div className="bg-white p-5 rounded-lg mt-5 lg:w-1/3">
+    <div className="bg-white p-5 rounded-lg mt-5">
       <Calendar value={today} />
     </div>
   );
