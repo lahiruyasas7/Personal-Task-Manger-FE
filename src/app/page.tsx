@@ -1,4 +1,3 @@
-import Image from "next/image";
 import CalenderComponent from "./components/Home/CalenderComponent";
 import MyTasksComponent from "./components/Home/MyTasksComponent";
 import MyCategories from "./components/Home/MyCategories";

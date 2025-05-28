@@ -6,7 +6,6 @@ import { FaTasks } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
 import { PiListThin } from "react-icons/pi";
 import { RxDashboard } from "react-icons/rx";
-import SampleAvatar from ".custom-images/sample-avatar.png";
 
 const NavigationBar = () => {
   return (
@@ -31,7 +30,7 @@ const NavigationBar = () => {
         </li>
         <li className="h-[65px] flex justify-start items-center pl-[20px] gap-[20px] cursor-pointer hover:bg-[#b5eef0]">
           <FaTasks size={25} className="text-[#30AAAC]" />
-          <Link href="/" className="text-lg font-bold text-[#30AAAC]">
+          <Link href="/my-tasks" className="text-lg font-bold text-[#30AAAC]">
             MY TASKS
           </Link>
         </li>
