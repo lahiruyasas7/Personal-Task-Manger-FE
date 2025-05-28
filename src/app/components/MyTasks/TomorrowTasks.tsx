@@ -7,7 +7,7 @@ import { CiCircleCheck } from 'react-icons/ci';
 function TomorrowTasks() {
   const columns1 = [
       {
-        name: "Today",
+        name: "Tomorrow",
         sortable: true,
         //center: false,
         cell: (row: MyTasks) => {
