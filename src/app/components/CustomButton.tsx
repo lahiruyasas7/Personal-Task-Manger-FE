@@ -1,4 +1,4 @@
-'usw client'
+'use client'
 import React from "react";
 import Button from "@mui/material/Button";
 import { IoMdAdd } from "react-icons/io";
