@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./components/NavigationBar";
 import HeaderBar from "./components/HeaderBar";
-import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import ReduxProvider from "./redux/ReduxProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,21 +31,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Provider store={store}>
-        <div className="flex gap-5">
-          {/* Sidebar */}
-          <NavigationBar />
+        <ReduxProvider>
+          <div className="flex gap-5">
+            {/* Sidebar */}
+            <NavigationBar />
 
-          {/* Right side: header and page content */}
-          <div className="flex-1 flex flex-col">
-            {/* Header */}
-            <HeaderBar />
+            {/* Right side: header and page content */}
+            <div className="flex-1 flex flex-col">
+              {/* Header */}
+              <HeaderBar />
 
-            {/* Main content */}
-            <main className="flex-1">{children}</main>
+              {/* Main content */}
+              <main className="flex-1">{children}</main>
+            </div>
           </div>
-        </div>
-        </Provider>
+        </ReduxProvider>
       </body>
     </html>
   );
